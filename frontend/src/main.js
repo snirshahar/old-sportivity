@@ -4,13 +4,15 @@ import './registerServiceWorker';
 import router from './router';
 import store from './store/store';
 import * as VueGoogleMaps from 'vue2-google-maps';
-import { GmapMarker } from 'vue2-google-maps/src/components/marker'
-// import keys from './apiKeyConfig';
+import GmapMarker  from 'vue2-google-maps/src/components/marker';
+import 'vue-video-section/dist/vue-video-section.css';
+import VueVideoSection from 'vue-video-section'
+Vue.component('vue-video-section', VueVideoSection)
 
 Vue.component('GmapMarker', GmapMarker)
 Vue.use(VueGoogleMaps, {
   load: {
-    // key: keys.googleKey,
+    key: 'AIzaSyAsh26jhkU5wtp6r_IcqAnuuuLrulpFl6Q',
     // libraries: 'places', // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
     // OR: libraries: 'places,drawing,visualization'
