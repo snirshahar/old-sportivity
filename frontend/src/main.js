@@ -5,12 +5,12 @@ import router from './router';
 import store from './store/store';
 import * as VueGoogleMaps from 'vue2-google-maps';
 import { GmapMarker } from 'vue2-google-maps/src/components/marker'
-import keys from './apiKeyConfig';
+// import keys from './apiKeyConfig';
 
 Vue.component('GmapMarker', GmapMarker)
 Vue.use(VueGoogleMaps, {
   load: {
-    key: keys.googleKey,
+    // key: keys.googleKey,
     // libraries: 'places', // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
     // OR: libraries: 'places,drawing,visualization'
